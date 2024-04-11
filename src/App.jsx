@@ -73,7 +73,7 @@ export function App() {
   };
 
   return (
-    <div className="mx-auto flex flex-col items-center h-screen bg-gray-200">
+    <div className="mx-auto flex flex-col items-center h-screen">
       <Header />
       <h1 className="text-3xl font-semibold mb-8 mt-8">
         Simulador de Parcelamento
@@ -127,7 +127,7 @@ export function App() {
           </table>
         </div>
 
-        <div className="flex mt-8">
+        <div className="flex items-center justify-center mt-8">
           <button
             className="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 mr-4 rounded"
             onClick={compartilharViaWhatsApp}
@@ -142,6 +142,14 @@ export function App() {
           </button>
         </div>
       </div>
+      <hr className="my-6 border-gray-900 sm:mx-auto dark:border-gray-700 lg:my-8" />
+      <span className="mb-6 block text-lg text-gray-700 sm:text-center dark:text-gray-600">
+        © 2024{" "}
+        <a href="https://www.instagram.com/cloudgraficarapida/">
+          @cloudgraficarapida™
+        </a>
+        . Todos os direitos reservados.
+      </span>
     </div>
   );
 }
