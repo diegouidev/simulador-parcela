@@ -103,11 +103,11 @@ export function App() {
           </div>
         </div>
 
-        <div className="flex flex-col items-center mt-8">
+        <div id="tabela-parcelas" className="flex flex-col items-center mt-8">
           <h2 className="text-xl font-semibold mb-4">
             Detalhes do Parcelamento:
           </h2>
-          <table id="tabela-parcelas" className="table-auto">
+          <table className="table-auto">
             <thead>
               <tr>
                 <th className="px-4 py-2">Nº de Parcelas</th>
@@ -127,7 +127,7 @@ export function App() {
           </table>
         </div>
 
-        <div className="mt-8">
+        <div className="flex mt-8">
           <button
             className="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 mr-4 rounded"
             onClick={compartilharViaWhatsApp}
